@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Companhia Aerea</title>
+    <link rel="stylesheet" href="/ecommerce/estilo/companhia_aerea.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>G3</h1>
+      </div>
+      <div class="slogam">
+        <p>Mais que uma viagem, uma experiência.</p>
+      </div>
+
+      <nav>
+        <div class="barra-navegação">
+          <a href="#">Início</a>
+          <a href="#">Hotéis</a>
+          <a href="#">Aluguel</a>
+          <a href="#">Serviços</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Formulario para busca de voo  -->
+    <form>
+      <label for="local_saida">De onde você está saindo?</label>
+      <input
+        type="text"
+        id="local_saida"
+        name="nome"
+        placeholder="De onde você está saindo?"
+      />
+
+      <label for="chegada">Para onde você vai?</label>
+      <input
+        type="text"
+        id="chegada"
+        name="chegada"
+        placeholder="Para onde você vai?"
+      />
+
+      <label for="datas">Escolha as datas</label>
+      <input
+        type="text"
+        id="datas"
+        name="datas"
+        placeholder="Escolha as datas"
+      />
+
+      <label for="passageiros">Quantidade de passageiros</label>
+      <input
+        type="text"
+        id="passageiros"
+        name="passageiros"
+        placeholder="Quantidade de passageiros"
+      />
+
+      <input type="submit" value="Buscar voos" />
+    </form>
+
+    <!-- Adicionar mais coisas -->
+
+    <section class="destaques-semanais">
+      <div class="destaques">
+        <h2>Destaques da Semana</h2>
+        <p>As melhores ofertas de viagem para você!</p>
+      </div>
+    </section>
+
+    <!-- categorias de voo  -->
+    <section class="category-section">
+      <div class="voos">
+        <h2>Categorias Populares</h2>
+        <br />
+        <div class="voo-nacional">Voos Nacionais</div>
+        <div class="voo-internacional">Voos Internacionais</div>
+        <div class="hoteis">Hotéis</div>
+        <div class="pacote-viagem">Pacotes de Viagem</div>
+      </div>
+    </section>
+
+    <section>
+      <nav>
+        <h2>Regiões do <strong>Brasil</strong></h2>
+        <ul>
+            <button>
+              <li><a href="#Norte"></a>Norte</li>
+            </button>
+            <button>
+              <li><a href="#Nordeste"></a>Nordeste</li>
+            </button>
+            <button>
+              <li><a href="#Centro-oeste"></a>Centro-oeste</li>
+            </button>
+            <button>
+              <li><a href="#Sul"></a>Sul</li>
+            </button>
+            <button>
+              <li><a href="#Sudeste"></a>Sudeste</li>
+            </button>
+        </ul>
+      </nav>
+    </section>
+
+    <!--Adicionar imagens nos cards-->
+
+    <main class="Norte" id="Norte">
+        <div class="card">
+                <ul>
+                    <button><img src="" alt="">Manaus, Amazonas</button>
+                    <button><img src="" alt="">Belém, Pará</button>
+                    <button><img src="" alt="">Palmas, Tocantins</button>
+                </ul>     
+        </div>
+    </main>
+
+    <main class="Nordeste" id="Nordeste"> 
+        <div class="card">
+                <ul>
+                    <button><img src="" alt="">Fortaleza, Ceará</button>
+                    <button><img src="" alt="">João Pessoa, Paraiba</button>
+                    <button><img src="" alt="">Bahia , Salvador</button>
+                </ul>    
+        </div>
+    </main>
+
+    <main class="Centro-oeste" id="Centro-oeste"> 
+        <div class="card">
+                <ul>
+                    <button><img src="" alt="">Cuiabá, Mato Grosso</button>
+                    <button><img src="" alt="">Goiânia , Goiás</button>
+                    <button><img src="" alt="">Brasília , Distrito Federal</button>
+                </ul>  
+        </div>
+    </main>
+
+    <main class="Sul" id="Sul"> 
+        <div class="card">
+                <ul>
+                    <button><img src="" alt="">Porto Alegre, Rio Grande do Sul</button>
+                    <button><img src="" alt="">Florianópolis , Santa Catarina</button>
+                    <button><img src="" alt="">Curitiba , Paraná</button>
+                </ul> 
+        </div>
+    </main>
+
+    <main class="Sudeste" id="Sudeste"> 
+        <div class="card">
+            <ul>
+                    <button><img src="" alt="">São Paulo, São Paulo</button>
+                    <button><img src="" alt="">Rio de Janeiro , Rio de Janeiro</button>
+                    <button><img src="" alt="">Minas Gerais , Belo Horizonte</button>
+            </div>
+        </ul>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 G3.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
