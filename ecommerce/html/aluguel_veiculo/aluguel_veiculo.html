@@ -3,15 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/ecommerce/estilo/estilo.css">
     <title>Document</title>
-</head>
-<body>Aluguel de Veículo
-    <nav class="hotel-button"> 
-        <button><a href="/ecommerce/html/pagina_principal/index.html">Home</a></button>
-        <button><a href="/ecommerce/html/companhia_aerea/companhia_area.html">Companhia Aérea</a></button>
-        <button><a href="/ecommerce/html/hotel/hotel.html">Hotéis</a></button>
-        <button><a href="/ecommerce/html/servicos/servicos.html">Serviços</a></button>
-    </nav>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">        
+    </script>
+    <script>
+        $(function(){
+            $('#header').load('/ecommerce/html/header/header.html');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('/ecommerce/html/footer/footer.html');
+        });
+    </script>
     
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <div class="aluguel-veiculo-middle"></div>
+    <div class="aluguel-veiculo-body">
+        <h1>Seu veículo</h1>
+        <form action="" class="flex-container">
+    
+            <label for="veiculo"> Veículo: </label>
+            <input type="text" id="veiculo" name="veiculo"> </input>
+            <br>
+            <br>
+            <label for="nome"> Nome: </label>
+            <input type="email" id="nome" name="nome"> </input>
+            <br>
+            <br>
+            <label for="email"> E-mail: </label>
+            <input type="text" id="email" name="email"> </input>
+            <br>
+            <br>
+            <label for="tel"> Telefone: </label>
+            <input type="tel" id="tel" name="tel"> </input>
+    
+        </form>
+        <br>
+        <br>
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi perspiciatis quisquam quia et soluta eos quae quidem, vel doloribus perferendis adipisci ut? Eius, ad eligendi laborum accusamus incidunt dolores vel dignissimos commodi ex doloribus. Pariatur ullam unde officiis animi qui quae iste, aliquam molestiae consequatur placeat adipisci, ipsa quos nihil voluptas in? Corporis tempora quod molestias quasi recusandae ipsam similique suscipit. Pariatur rem consequuntur natus molestiae rerum esse dolorum ad, excepturi tenetur, vero dicta ipsa sit eaque, id ea provident eius debitis. Enim quam necessitatibus sunt distinctio nihil ea velit eligendi reiciendis numquam quas itaque rerum, animi beatae illo ducimus commodi dolore repudiandae a aperiam, voluptates explicabo. Quaerat, dolore maxime! Ullam est assumenda eos tenetur animi eius quibusdam modi placeat magni mollitia? Dolor voluptatem, dignissimos, magnam distinctio totam hic maiores minus exercitationem impedit sunt repellat accusamus animi? Autem, perspiciatis architecto, illo omnis minima a itaque, aspernatur tempora magni praesentium nihil voluptates accusamus eaque ex doloribus deserunt rerum sint amet possimus blanditiis nesciunt tempore vitae cum repudiandae? Eaque doloremque nihil dolorem cumque asperiores ipsam officiis obcaecati illo maiores! Velit, culpa vero at non illum optio earum obcaecati labore ipsum ipsam. Nobis ex autem nesciunt accusamus eaque numquam, mollitia reiciendis ratione esse!</p>
+    </div>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
 </body>
 </html>
