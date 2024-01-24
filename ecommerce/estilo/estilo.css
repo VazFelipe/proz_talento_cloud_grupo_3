@@ -21,4 +21,18 @@ footer{
    justify-content: space-around;
    align-items: flex-end;
    }
+.divmaster{
+    align-items: flex-start;
+    margin: 8px;
+    padding: 8px;
+}
+.divselecaocarros{
+    display: inline-flex;
+    align-items: center;
+    margin: 8px;
+    padding: 8px;
+    border: 8px;
+    ;
+
+}
    /*Comentario*/
