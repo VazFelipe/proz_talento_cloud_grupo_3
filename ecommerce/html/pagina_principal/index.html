@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/ecommerce/estilo/estilo.css">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">        
+    </script>
+    <script>
+        $(function(){
+            $('#header').load('/ecommerce/html/header/header.html');
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('/ecommerce/html/footer/footer.html');
+        });
+    </script>
+    
 </head>
 <body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <div class="index-middle"></div>
+
+    <div class="index-body">
+        <h1>Seu destino</h1>
+        <form action="" class="flex-container">
     
+            <label for="sonho"> Sua viagem: </label>
+            <input type="text" id="sonho" name="sonho"> </input>
+            <br>
+            <br>
+            <label for="nome"> Nome: </label>
+            <input type="email" id="nome" name="nome"> </input>
+            <br>
+            <br>
+            <label for="email"> E-mail: </label>
+            <input type="text" id="email" name="email"> </input>
+            <br>
+            <br>
+            <label for="tel"> Telefone: </label>
+            <input type="tel" id="tel" name="tel"> </input>
+    
+        </form>
+        <br>
+        <br>
+        <h1> Aqui você encontra!</h1>
+        <p class="paragraph">Viajar? Para viajar basta existir. Vou de dia para dia, como de estação para estação, no comboio do meu corpo, ou do meu destino, debruçado sobre as ruas e as praças, sobre os gestos e os rostos, sempre iguais e sempre diferentes, como, afinal, as paisagens são.
+
+            Se imagino, vejo. Que mais faço eu se viajo? Só a fraqueza extrema da imaginação justifica que se tenha que deslocar para sentir.
+            
+            “Qualquer estrada, esta mesma estrada de Entepfuhl, te levará até ao fim do mundo”. Mas o fim do mundo, desde que o mundo se consumou dando-lhe a volta, é o mesmo Entepfuhl de onde se partiu. Na realidade, o fim do mundo, como o princípio, é o nosso conceito do mundo. É em nós que as paisagens têm paisagem. Por isso, se as imagino, as crio; se as crio, são; se são, vejo-as como às outras. Para quê viajar? Em Madrid, em Berlim, na Pérsia, na China, nos Pólos ambos, onde estaria eu senão em mim mesmo, e no tipo e género das minhas sensações?
+            
+            A vida é o que fazemos dela. As viagens são os viajantes. O que vemos, não é o que vemos, senão o que somos.</p>
+    </div>
+
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
 </body>
 </html>
