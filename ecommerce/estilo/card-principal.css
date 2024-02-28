@@ -1,0 +1,117 @@
+#card-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#trips {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+
+.section-title {
+    color: #4D3766;
+    background: radial-gradient(circle at center, #ffffff 10%, transparent 100%);
+    font-size: 1.563rem; 
+}
+
+.section-subtitle strong {
+    color: #000000;
+}
+.section-subtitle {
+    color: #78b0d3;
+    background: radial-gradient(circle at center, #fff 10%, transparent 100%);
+}
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.trip:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.trip-title {
+    color: #000000;
+}
+
+.trip-heart {
+    position: relative;
+    background-color: #4D3766;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.trip-img {
+    width: 41vh;
+    height: 32vh;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.08);
+}
+
+.trip-rate {
+    color: #000000;
+    font-weight: bold;
+}
+
+.trip-rate i {
+    color: #e9a209;
+}
+
+.trip-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;    
+    gap: 20px;
+}
+
+.btn-default {
+    
+}
+
+@media screen and (max-width: 1170px) {
+    #trips {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .trip {
+        width: calc(50% - 12px);
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .trip {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}

@@ -1,0 +1,51 @@
+header {
+    background-color: #c5dbe9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* sombreamento embaixo do header */
+}
+ 
+  
+.nav-menu ul {
+    list-style-type: none; /* tira todo os stylos padrões da */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.nav-menu li {
+    margin-right: 20px;
+}
+  
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;    
+    position: relative; /* animação da cor */
+    transition: color 0.3s ease; /* tempo de transição da animação */
+ }
+  
+ .nav-menu a:hover {
+   color: #860f91; /* Cor quando o mouse passa por cima */
+}
+
+  /* toda a animação de sublinhamento */
+.nav-menu a::before {
+   content: '';
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: #ffcc00; /* Cor da linha */
+   bottom: 0;
+   left: 0;
+   transition: width 0.3s ease;
+}
+  
+.nav-menu a:hover::before {
+   width: 100%;
+}
+  
+  
