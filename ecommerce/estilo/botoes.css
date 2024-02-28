@@ -1,0 +1,29 @@
+.butaos {
+    display: flex;
+    justify-content: end;
+}
+
+.nacional-internacional {
+    text-decoration: none;
+    overflow: hidden;
+    width: 10%;
+    padding: 10px;
+    margin: 0 90px 0 -50px;
+    font-weight: 400;
+    border-radius: 17px;
+    color:  #fafafa ;
+    background:linear-gradient( #C5DBE9, #4D3766);
+    border: solid #7b7b7b 1px;
+    cursor: pointer;
+  }
+  
+  .nacional-internacional:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 1170px) {
+    .butaos {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+}

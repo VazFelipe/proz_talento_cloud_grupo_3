@@ -1,0 +1,21 @@
+#internacional {
+    width: 100%;
+    padding: 30px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.internacional-title {
+    color: #FFD43B;
+    font-style: oblique;
+    font-weight: 700;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-shadow: 1px 1px 2px #ffff;
+  }
+  

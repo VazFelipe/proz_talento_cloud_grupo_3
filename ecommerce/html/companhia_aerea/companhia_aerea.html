@@ -1,58 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/ecommerce/estilo/estilo.css">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">        
-    </script>
-    <script>
-        $(function(){
-            $('#header').load('/ecommerce/html/header/header.html');
-        });
-    </script>
-    <script>
-        $(function(){
-            $('#footer').load('/ecommerce/html/footer/footer.html');
-        });
-    </script>
-    
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Companhia Aerea</title>
+    <link rel="shortcut icon" href="/html/img/companhia_aerea/logo-icone.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/estilo/header.css" />
+    <link rel="stylesheet" href="/estilo/formulario.css" />
+    <link rel="stylesheet" href="/estilo/body.css" />
+    <link rel="stylesheet" href="/estilo/voos.css" />
+    <link rel="stylesheet" href="/estilo/card-viagens.css" />
+    <link rel="stylesheet" href="/estilo/botoes.css">
+    <link rel="stylesheet" href="/estilo/footer.css" />
+    <link rel="stylesheet" href="/estilo/card-principal.css" />
+    <link rel="stylesheet" href="/estilo/nacional.css">
+    <link rel="stylesheet" href="/estilo/internaciona.css">
+    <link rel="stylesheet" href="/estilo/curiosidades.css" />
+    <link rel="stylesheet" href="/estilo/estilo.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  
+  </head>
+  <body>
+    <!--Parte do header-->
     <header>
-        <div id="header"></div>
+      <img class="logo" src="/html/img/companhia_aerea/logo-100.png" alt="Logo Grupo 3" />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ALUGUEL DE VEICULOS</a></li>
+          <li><a href="companhia_aerea.html">VOOS</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="companhia-aerea-middle"></div>
-    <div class="companhia-aerea-body">
-        <h1>Sua viagem</h1>
-        <form action="" class="flex-container">
-    
-            <label for="viagem"> Destino: </label>
-            <input type="text" id="viagem" name="viagem"> </input>
-            <br>
-            <br>
-            <label for="nome"> Nome: </label>
-            <input type="email" id="nome" name="nome"> </input>
-            <br>
-            <br>
-            <label for="email"> E-mail: </label>
-            <input type="text" id="email" name="email"> </input>
-            <br>
-            <br>
-            <label for="tel"> Telefone: </label>
-            <input type="tel" id="tel" name="tel"> </input>
-    
-        </form>
+    <!--Formulario para viagem-->
 
-        <br>
-        <br>
-        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi perspiciatis quisquam quia et soluta eos quae quidem, vel doloribus perferendis adipisci ut? Eius, ad eligendi laborum accusamus incidunt dolores vel dignissimos commodi ex doloribus. Pariatur ullam unde officiis animi qui quae iste, aliquam molestiae consequatur placeat adipisci, ipsa quos nihil voluptas in? Corporis tempora quod molestias quasi recusandae ipsam similique suscipit. Pariatur rem consequuntur natus molestiae rerum esse dolorum ad, excepturi tenetur, vero dicta ipsa sit eaque, id ea provident eius debitis. Enim quam necessitatibus sunt distinctio nihil ea velit eligendi reiciendis numquam quas itaque rerum, animi beatae illo ducimus commodi dolore repudiandae a aperiam, voluptates explicabo. Quaerat, dolore maxime! Ullam est assumenda eos tenetur animi eius quibusdam modi placeat magni mollitia? Dolor voluptatem, dignissimos, magnam distinctio totam hic maiores minus exercitationem impedit sunt repellat accusamus animi? Autem, perspiciatis architecto, illo omnis minima a itaque, aspernatur tempora magni praesentium nihil voluptates accusamus eaque ex doloribus deserunt rerum sint amet possimus blanditiis nesciunt tempore vitae cum repudiandae? Eaque doloremque nihil dolorem cumque asperiores ipsam officiis obcaecati illo maiores! Velit, culpa vero at non illum optio earum obcaecati labore ipsum ipsam. Nobis ex autem nesciunt accusamus eaque numquam, mollitia reiciendis ratione esse!</p>
+    <div class="formulario">
+      <form id="form" class="form">
+        <div class="button">
+          <h2 class="titulo form">PASSAGENS AÉREAS</h2>
+          <button class="ida-volta">Ida e voltas</button>
+          <button class="ida-volta">Somente ida</button>
+        </div>
+        <div class="saida-chegada">
+          <label for="saida">De onde você está saindo?</label>
+          <input type="text" id="saida" placeholder="Busque por aeroporto" />
+          <label for="chegada">Para onde você vai?</label>
+          <input type="text" id="chegada" placeholder="Busque por aeroporto" />
+          <label for="date"></label>
+          <input type="date" />
+          <label for="passageiros"
+            >Passageiros<select name="passageiros">
+              <option value="valor1" selected>Passageiro 1</option>
+              <option value="valor2">Passageiro 2</option>
+              <option value="valor3">Passageiro 3</option>
+            </select>
+          </label>
+        </div>
+      </form>
     </div>
+                           <!--TERMINO DO FORMULARIO-->
+                         <!--INICIO VOOS COM ATÉ 50% DE DESCONTO-->
+    <div class="butaos">
+      <button class="nacional-internacional">
+        <a href="#nacional">Nacional</a>
+      </button>
+      <button class="nacional-internacional"><a href="#internacional">Internacional</a></button>
+      
+    </div>
+    
+    <section id="card-principal">
+      <h2 class="section-title">VOOS COM ATÉ 50% DE DESCONTO</h2>
+      <h3 class="section-subtitle"><strong>Saída:</strong> São Paulo</h3>
 
+      <div id="trips">
+        <div class="trip">
+          <div class="trip-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="/html/img/companhia_aerea/goias.jpg" alt="Goiânia" class="trip-img" />
+
+          <h3 class="trip-title">Goiânia-GO</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(123+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>R$138,41</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="trip">
+          <div class="trip-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="/html/img/companhia_aerea/bélem.avif" alt="Belém" class="trip-img" />
+
+          <h3 class="trip-title">Belém-PA</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(79+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>R$189,52</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="trip">
+          <div class="trip-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="/html/img/companhia_aerea/cuiaba.jpg" alt="Cuiabá" class="trip-img" />
+
+          <h3 class="trip-title">Cuiabá-MT</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(92+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>R$193,71</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="trip">
+          <div class="trip-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img
+            src="/html/img/companhia_aerea/porto alegre.jpg"
+            alt="Rio de janeiro"
+            class="trip-img"
+          />
+
+          <h3 class="trip-title">Porto Alegre-RS</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(290+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>R$158,10</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+                                 <!--TERMINO DOS VOOS COM ATÉ 50% DE DESCONTO-->
+                                 <!--INICIO NACIONAL-->
+      
+    <section id="nacional">
+     <div class="carousel-banner">
+      <i class="fa-solid fa-plane-departure fa-xl" style="color: #e4e5e7;"></i>
+      <h2 class="nacional-title">REGIÕES DO BRASIL</h2>
+      <i class="fa-solid fa-plane-arrival fa-xl" style="color: #e4e5e7;"></i>
+    </div>
+     
+      <div class="carousel__container">
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/norte.jpg"
+            alt="Norte"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#norte"
+                >Norte</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/nordeste.jpg"
+            alt="Nordeste"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#nordeste"
+                >Nordeste</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/centro-oeste.jpg"
+            alt="centro-oeste"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#centro-oeste"
+                >Centro-oeste</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/sudeste.jpg"
+            alt="Sudeste"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#sudeste"
+                >Sudeste</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/sul.jpg"
+            alt="Sul"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#sul"
+                >Sul</a
+              >
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+                              <!--TERMINO NACIONAL-->
+                              <!--INICIO INTERNACIONAL-->
+    <section id="internacional">
+     <div class="carousel-banner">
+      <i class="fa-solid fa-earth-americas fa-xl" style="color: #e4e5e7;"></i>
+      <i class="fa-solid fa-earth-africa" style="color: #e4e5e7;"></i>
+      <h2 class="internacional-title">CONTINENTES</h2>
+      <i class="fa-solid fa-earth-asia" style="color: #e4e5e7;"></i>
+      <i class="fa-solid fa-earth-europe fa-xl" style="color: #e4e5e7;"></i>
+    </div>
+     
+      <div class="carousel__container">
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/america-sul.jpg"
+            alt="América do Sul"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#AmericaDoSul"
+                >América do Sul</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/america-norte.webp"
+            alt="Nordeste"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#AmericaDoNorte"
+                >América do Norte</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/africa.jpg"
+            alt="África"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#africa"
+                >África</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/asia.jpg"
+            alt="Ásia"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#asia"
+                >Ásia</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/europa.jpg"
+            alt="Europa"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#europa"
+                >Europa</a
+              >
+            </h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/oceania.jpg"
+            alt="Oceania "
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="#oceania "
+                >Oceania </a
+              >
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+                             <!--INICIO CARD DE VIAGENS-->
+
+    <section class="carousel">
+     <div class="carousel-banner">
+      <i class="fa-solid fa-compass fa-2xl" style="color: #e4e5e7;"></i>
+      <h2 class="carousel-title">Conheça algumas cidades antes de viajar conosco</h2>
+      <i class="fa-solid fa-compass fa-2xl" style="color: #e4e5e7;"></i>
+    </div>
+     
+      <div class="carousel__container">
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/são paulo.webp"
+            alt="São Paulo"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/SP/193/sao-paulo"
+                target="_blank"
+                >São Paulo</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/rio de janeiro2.webp"
+            alt="Rio de janeiro"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/RJ/962/rio-de-janeiro"
+                target="_blank"
+                >Rio de Janeiro</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/fortaleza2.webp"
+            alt="Fortaleza"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/CE/980/fortaleza"
+                target="_blank"
+                >Fortaleza</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/brasilia.avif"
+            alt="Brasilia"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/DF/973/brasilia"
+                target="_blank"
+                >Brasilia</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/Curitiba.avif"
+            alt="Curitiba"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/PR/966/curitiba"
+                target="_blank"
+                >Curitiba</a
+              >
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="/html/img/companhia_aerea/belo horizonte.jpg"
+            alt="Belo Horizonte"
+          />
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title">
+              <a
+                href="https://www.guiadoturismobrasil.com/cidade/MG/969/belo-horizonte"
+                target="_blank"
+                >Belo Horizonte</a
+              >
+            </h5>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--final da section card-->
+
+    <!--Parte do rodapé-->
     <footer>
-        <div id="footer"></div>
+      <div class="footer">
+        <div class="row">
+          <!--Por conta do font awesome lá em cima conseguimos sair da necessidade de inserir as imagens para buscar os icones de redes sociais direto no site-->
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa fa-youtube"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Aluguel de veículos</a></li>
+            <li><a href="companhia_aerea.html">Voos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="slogan">Seu proximo destino é conosco || © 2024</div>
+      </div>
     </footer>
-</body>
+    <hr />
+    <div id="copyright">
+      Desenvolvido por
+      <a href="https://github.com/Adriano94a" target="_blank">@AdrianoSouza</a>
+      <a href="https://github.com/andremilanez71" target="_blank"
+        >@AndreMilanez</a
+      >
+      <a href="https://github.com/brunol77" target="_blank">@BrunoVieira</a>
+      <a href="https://github.com/DevLuisairton" target="_blank">@LuisAirton</a>
+      <a href="https://github.com/VazFelipe" target="_blank">@VazFelipe</a>
+      .
+    </div>
+  </body>
 </html>
