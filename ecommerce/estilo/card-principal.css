@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 #trips {
@@ -59,7 +60,7 @@
     justify-content: center;
     font-size: 1.563rem;
     color: #ffffff;
-    width: 70px;
+    width: 100px;
     height: 70px;
     right: -10px;
     top: -10px;

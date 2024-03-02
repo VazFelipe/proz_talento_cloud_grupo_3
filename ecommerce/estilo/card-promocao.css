@@ -1,0 +1,19 @@
+#card-promocao {
+    margin-top: 50px;
+}
+
+.section-title {
+    color: #4D3766;
+    background: radial-gradient(circle at center, #ffffff 10%, transparent 100%);
+    font-size: 1.563rem;
+    text-align: center; 
+}
+
+.section-subtitle strong {
+    color: #000000;
+}
+.section-subtitle {
+    color: #78b0d3;
+    background: radial-gradient(circle at center, #fff 10%, transparent 100%);
+    text-align: center;
+}
