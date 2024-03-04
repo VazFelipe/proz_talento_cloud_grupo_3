@@ -1,0 +1,86 @@
+/* FORMULARIO DE CONTATO */
+#Formulario {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.form-principal {
+  display: flex;
+  flex-direction: column;
+  color: #076dac;
+  font-weight: 700;
+  width: 400px;
+  background-color: lightgray;
+  border-radius: 16px;
+  padding: 1.5rem 40px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin-bottom: .2rem;
+  position: relative;
+}
+
+label:not(:first-of-type){
+  margin-top: 1rem;
+}
+
+input {
+  padding: .2rem .5rem;
+}
+
+#texto {
+  display: grid;
+  padding: 2rem 0rem;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  align-self: center;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}

@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/ecommerce/html/servicos/style.css">
+    <link rel="stylesheet" href="/ecommerce/html/servicos/form_style.css">
     <link rel="stylesheet" href="/ecommerce/html/servicos/footer.css">
+    <script src="/ecommerce/html/servicos/form_script.js" defer></script>
     <title>servicos</title>
 </head>
+
 
 <body>
     <header>
@@ -23,49 +26,26 @@
         </nav>
     </header>
 
-    <main>
-    <h1>Veja nossa lista de serviços</h1>
-    <h2>Estamos aqui pra atender suas necessidades</h2>
-    <br>
-    <section>
-        <div>
-            <h3>Guia Turistico</h3>
-            <p>Planeja, crie rotas, viva as melhores experiências</p>
-            <br>
-            <img src="/ecommerce/html/servicos/img/guia.png" alt="hatch">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Preencha o formulário de solicitação</a></p>                    
-        </div>
-        <div>
-            <h3>Aluguel de Malas </h3>
-            <p>Escolha a mala que atende as suas necessidades</p>
-            <br>            
-            <img src="/ecommerce/html/servicos/img/malas.png" alt="sedan">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Faça sua cotação</a></p>        
-        </div>
-        <div>
-            <h3>Hospedagem para Pet</h3>
-            <p>Leve seu pet com conforto e segurança</p>
-            <br>
-            <img src="/ecommerce/html/servicos/img/pet.png" alt="suv">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Fale com um de nossos tutelados</a></p>
-        </div>
-        <div>
-          <h3>Seguro Viagem</h3>
-          <p>Viaje seguro sem se preocupar com os imprevistos</p>
-          <br>
-          <img src="/ecommerce/html/servicos/img/seguro.png" alt="suv">
-          <br>
-          <br>
-          <p><a href="/ecommerce/html/servicos/form.html">Faça sua cotação</a></p>
-      </div>
-    </section>
-    </main>
+  <div id="Formulario">
+  <form class="form-principal">
+      <h2 >Formulário de Contato</h2>
+      <label for="username">Nome Completo:</label>
+      <input type="text" id="username" name="username">
+      <p id="username-helper" class="helper-text" required placeholder="Nome">Nome muito curto</p>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+      <p id="email-helper" class="helper-text" required placeholder="Email">Email fora do padrão deve conter: @ e .com</p>
+
+      <label for="telefone">Telefone:</label>
+      <textarea id="number" name="telefone" required placeholder="(xx) xxxxx-xxxx"></textarea>
+
+      <label for="texto">Texto:</label>
+      <textarea id="texto" name="texto_usuario"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>    	
+  </div>
    
     <footer>
         <div class="footer">
