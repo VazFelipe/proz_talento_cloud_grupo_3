@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/* Inicio do Header */
+
+
+header {
+    background-color: #C5DBE9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) /*Sombreamento abaixo do header */
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    position:relative;
+    transition: color 0.3 s ease; /* tempo de transição da animação */
+}
+
+.nav-menu a:hover {
+    color: #860f91; /* mudança cor  quando passa o mouse por cima do menu*/
+}
+
+  /* toda a animação de sublinhamento */
+  .nav-menu a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffcc00; /* Cor da linha */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+ }
+   
+ .nav-menu a:hover::before {
+    width: 100%;
+ }
+
+
+ /*FIM do HEADER   */
+
+
+
+ /*Botão de cadastre-se*/
+ .input-group-append {
+    padding: 5px;
+ }
+
+
+ /* caixas*/
+
+ .caixa {
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+ }
+
+
+.img-carro {
+    height: 40%;
+}
+
+
+/* */
+
+/* definindo a cor de fundo do footer(rodapé) */
+.footer {
+    background-color: #c5dbe9;;
+    padding: 30px 0px;
+    font-family: "Play", sans-serif;
+    font-weight: 550;
+    text-align: center;
+    text-shadow: 0 0 2px #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  
+  .footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: black; /*Cor do nosso texto inferior*/
+    font-size: 1em;
+    
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: black; /*Definição da cor dos menus e icones de redes sociais*/
+    transition: 0.5s;
+  }
+  
+  .footer .row a:hover {
+    color: white;
+  }
+  
+  .footer .row ul {
+    width: 100%;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+  
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+  }
+  
+  @media (max-width: 720px) {
+    .footer {
+      text-align: left;
+      padding: 5%;
+    }
+    .footer .row ul li {
+      display: block;
+      margin: 10px 0px;
+      text-align: left;
+    }
+    .footer .row a i {
+      margin: 0% 3%;
+    }
+  }
+  
+  .slogan {
+    color: #263138;
+    text-shadow: 0 0 2px #ffffff;
+  }
+  
+  hr {
+    border:solid rgb(253, 215, 0);
+    
+  }
+  
+  #copyright {
+    background-color: #263138;
+    color: #ffff;
+    font-weight: 550;
+    padding: 24px;
+    text-align: center;
+    text-shadow: 0 0 2px #ffffff;
+  }
+  
+  #copyright a {
+    color: #c5dbe9;
+  }
+  
+  #copyright a:hover {
+    color: rgb(253, 215, 0);
+  }
+  
+
+  .social-icons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons i{
+    padding-right: 40px;
+  }
+
+
+  /* Imagens do conheça mais */
+
+  .slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    vertical-align: top;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: white;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}

@@ -3,7 +3,7 @@ h2 {
 }
 
 .formulario {
-  background-color: #c5dbe9;
+  background-color: #4663ac;  /* #c5dbe9 */
   border-radius: 20px;
   margin: 50px;
   padding: 30px;
@@ -47,7 +47,9 @@ h2 {
   align-items: center;
   margin-bottom: 8px;
   padding-bottom: 18px;
+  column-gap: 10px;
   position: relative;
+  font-size: 16px;
 }
 
 .saida-chegada label {
@@ -69,6 +71,13 @@ h2 {
 }
 
 .saida-chegada input {
+  width: 20%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
+}
+
+.saida-chegada select {
   width: 20%;
   border-radius: 8px;
   padding: 8px;
