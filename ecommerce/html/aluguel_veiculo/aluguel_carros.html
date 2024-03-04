@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G3 - Aluguel de Carros</title>
+    <link rel="shortcut icon" href="/ecommerce/ecommerce/html/img/companhia_aerea/logo-icone.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/ecommerce/estilo/header.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/formulario.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/body.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/voos.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/card-viagens.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/botoes.css">
+    <link rel="stylesheet" href="/ecommerce/estilo/footer.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/card-principal.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/nacional.css">
+    <link rel="stylesheet" href="/ecommerce/estilo/internaciona.css">
+    <link rel="stylesheet" href="/ecommerce/estilo/curiosidades.css" />
+    <link rel="stylesheet" href="/ecommerce/estilo/estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+      <!--Parte do header-->
+      <header>
+        <img class="logo" src="/ecommerce/html/img/companhia_aerea/logo-100.png" alt="Logo Grupo 3" />
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="/ecommerce/html/pagina_principal/index.html">HOME</a></li>
+            <li><a href="/ecommerce/html/aluguel_veiculo/aluguel_veiculo.html">ALUGUEL DE VEÍCULOS</a></li>
+            <li><a href="/ecommerce/html/hotel/hotel.html">HOTÉIS</a></li>
+            <li><a href="/ecommerce/html/companhia_aerea/companhia_aerea.html">VOOS</a></li>
+            <li><a href="/ecommerce/html/servicos/servicos.html">SERVIÇOS</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Formulario para aluguel de carros-->
+      <div class="formulario">
+        <form id="form" class="form">
+          <div class="button">
+            <h2 class="titulo form">ALUGUEL DE VEÍCULOS</h2>
+          </div>
+          <div class="saida-chegada">
+            <label for="saida">Selcione agencia de retirada</label>
+            <label for="date">Retirada</label>
+            <label for="date">Devolução</label>
+            <label for="devoclucao">Agencia de Devolução</label>
+          </div>
+          <div class="saida-chegada"> 
+            <select name="agenciaSaida" class="">
+              <option value="valor1"></option>
+              <option value="valor1">Criciúma</option>
+              <option value="valor2">Tubarão</option>
+              <option value="valor3">Florianópolis</option>
+            </select>
+            <input type="datetime-local"  id="DataRetirada"/>
+            <input type="datetime-local" id="DataDevolucao"/>
+            <select name="passageiros">
+              <option value="valor1"></option>
+              <option value="valor1">Criciúma</option>
+              <option value="valor2">Tubarão</option>
+              <option value="valor3">Florianópolis</option>
+             </select>
+          </div>
+          <div class="saida-chegada"><button type="button"><a href="">Buscar Veículos</a></button></div>
+        </form>
+      </div><!--TERMINO DO FORMULARIO-->
+      <!--INICIO VOOS COM ATÉ 50% DE DESCONTO-->
+      <section id="card-principal">
+        <h2 class="section-title">MODELOS DISPONÍVEIS</h2>
+        <!--Inicio card caminhonetes-->
+        <div id="trips">
+          <div class="trip">
+            <div class="trip-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/ecommerce/html/img/aluguel_veiculo/Caminhonetes.jpg" alt="Caminhonetes" class="trip-img" />
+            <h3 class="trip-title">Caminhonetes</h3>
+            <div class="trip-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(123+)</span>
+            </div>
+            <div class="trip-price">
+              <h4>Preço R$250,00 diária</h4> 
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--Fim Card Caminhonetes-->  
+          <!--Inicio Card SUVs-->  
+          <div class="trip">
+            <div class="trip-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/ecommerce/html/img/aluguel_veiculo/Suvs.jpg" alt="Suvs" class="trip-img" />
+            <h3 class="trip-title">SUVs</h3>
+            <div class="trip-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(79+)</span>
+            </div>
+            <div class="trip-price">
+              <h4>Preço R$200,00 a diária</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--Fim Card SUVs-->  
+          <!--Inicio Card Sedans-->
+          <div class="trip">
+            <div class="trip-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/ecommerce/html/img/aluguel_veiculo/Sedans.jpg" alt="Sedans" class="trip-img" />
+            <h3 class="trip-title">Sedans</h3>
+            <div class="trip-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(92+)</span>
+            </div>
+            <div class="trip-price">
+              <h4>Preço R$150,00 a diária</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!--Fim Card Sedans-->  
+          <!--Inicio Card Populares-->
+          <div class="trip">
+            <div class="trip-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="/ecommerce/html/img/aluguel_veiculo/Popular.jpg" alt="Populares" class="trip-img"/>
+            <h3 class="trip-title">Populares</h3>
+            <div class="trip-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(290+)</span>
+            </div>
+            <div class="trip-price">
+              <h4>Preço R$100,00 a diária</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FIM Card Carros-->
+      <!--INICIO Planos-->
+      <section id="Planos">
+      <div class="carousel-banner">
+        <i class="" style="color: #e4e5e7;"></i>
+        <h2 class="nacional-title">Planos</h2>
+        <i class="" style="color: #e4e5e7;"></i>
+      </div>
+        <div class="carousel__container">
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="diaria"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">Diária</a>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="mensal"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">Mensal</a>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="mensal"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">KM Rodado</a>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="mensal"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">KM Mensal</a>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="mensal"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">Empresas</a>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="/ecommerce/html/img/aluguel_veiculo/FundoCardPlanos.png" alt="mensal"/>
+            <div class="carousel-item__details">
+              <div class="controls"></div>
+                <h5 class="carousel-item__details--title">
+                  <a href="">Seguros</a>
+                </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PLANOS-->
+    </section>
+    <!--final da section card-->
+    <!--Parte do rodapé-->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <!--Por conta do font awesome lá em cima conseguimos sair da necessidade de inserir as imagens para buscar os icones de redes sociais direto no site-->
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="row">
+          <ul>
+            <li><a href="/ecommerce/html/pagina_principal/index.html">HOME</a></li>
+            <li><a href="/ecommerce/html/aluguel_veiculo/aluguel_veiculo.html">ALUGUEL DE VEÍCULOS</a></li>
+            <li><a href="/ecommerce/html/hotel/hotel.html">HOTÉIS</a></li>
+            <li><a href="/ecommerce/html/companhia_aerea/companhia_aerea.html">VOOS</a></li>
+            <li><a href="/ecommerce/html/servicos/servicos.html">SERVIÇOS</a></li>
+          </ul>
+        </div>
+        <div class="slogan">Seu proximo destino é conosco || © 2024</div>
+      </div>
+    </footer>
+    <hr />
+    <div id="copyright">
+      Desenvolvido por
+      <a href="https://github.com/Adriano94a" target="_blank">@AdrianoSouza</a>
+      <a href="https://github.com/andremilanez71" target="_blank">@AndreMilanez</a>
+      <a href="https://github.com/brunol77" target="_blank">@BrunoVieira</a>
+      <a href="https://github.com/DevLuisairton" target="_blank">@LuisAirton</a>
+      <a href="https://github.com/VazFelipe" target="_blank">@VazFelipe</a>.
+    </div>
+  </body>
+</ecommerce/html>
