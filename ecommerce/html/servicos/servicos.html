@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/ecommerce/html/servicos/style.css">
+    <link rel="stylesheet" href="/ecommerce/html/servicos/body.css">
     <link rel="stylesheet" href="/ecommerce/html/servicos/footer.css">
-    <title>servicos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Serviços</title>
 </head>
 
 <body>
@@ -24,47 +27,124 @@
     </header>
 
     <main>
-    <h1>Veja nossa lista de serviços</h1>
-    <h2>Estamos aqui pra atender suas necessidades</h2>
-    <br>
-    <section>
-        <div>
-            <h3>Guia Turistico</h3>
-            <p>Planeja, crie rotas, viva as melhores experiências</p>
-            <br>
-            <img src="/ecommerce/html/servicos/img/guia.png" alt="hatch">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Preencha o formulário de solicitação</a></p>                    
+    
+      <section id="card-principal">
+      <h1 class="section-title"><strong>Lista de Serviços Disponíveis</strong></h1>
+      <h2 class="section-subtitle">Estamos aqui para atender suas necessidades</h2>
+
+                      <!-- GUIA TURISTICO -->
+      <div id="trips">
+        <div class="trip">
+          <div class="trip-heart">
+            <h3>Guia Turistico</h3>            
+          </div>
+
+          <img src="img/guia.png" alt="Guia" class="trip-img" />
+
+          <h3 class="trip-title">Planeja, crie rotas, viva as melhores experiências</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(127+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>A partir de R$150,00</h4>                  
+           <p><a href="/ecommerce/html/servicos/form.html" target="_blank">Faça cotação com um Guia</a></p>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
         </div>
-        <div>
-            <h3>Aluguel de Malas </h3>
-            <p>Escolha a mala que atende as suas necessidades</p>
-            <br>            
-            <img src="/ecommerce/html/servicos/img/malas.png" alt="sedan">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Faça sua cotação</a></p>        
+
+                          <!-- ALUGUEL MALAS -->
+        <div class="trip">
+          <div class="trip-heart">
+            <h3>Aluguel de Malas</h3>
+          </div>
+
+          <img src="img/malas.png" alt="Malas" class="trip-img" />
+
+          <h3 class="trip-title">Escolha a mala que atende as suas necessidades</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(79+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>A partir de R$30,00</h4>            
+            <p><a href="/ecommerce/html/servicos/form.html" target="_blank">Faça sua cotação</a></p> 
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
         </div>
-        <div>
-            <h3>Hospedagem para Pet</h3>
-            <p>Leve seu pet com conforto e segurança</p>
-            <br>
-            <img src="/ecommerce/html/servicos/img/pet.png" alt="suv">
-            <br>
-            <br>
-            <p><a href="/ecommerce/html/servicos/form.html">Fale com um de nossos tutelados</a></p>
+
+                          <!-- HOSPEDAGEM PET -->
+        <div class="trip">
+          <div class="trip-heart">
+            <h3>Hospedagem para pet</h3>            
+          </div>
+
+          <img src="img/pet.png" alt="Pet" class="trip-img" />
+
+          <h3 class="trip-title">Leve seu pet com conforto e segurança</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(92+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>A partir de R$45,00</h4>
+            <p><a href="/ecommerce/html/servicos/form.html" target="_blank">Fale com um de nossos tutelados</a></p>            
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
         </div>
-        <div>
-          <h3>Seguro Viagem</h3>
-          <p>Viaje seguro sem se preocupar com os imprevistos</p>
-          <br>
-          <img src="/ecommerce/html/servicos/img/seguro.png" alt="suv">
-          <br>
-          <br>
-          <p><a href="/ecommerce/html/servicos/form.html">Faça sua cotação</a></p>
-      </div>
-    </section>
+                          <!-- SEGURO VIAGEM -->
+        <div class="trip">
+          <div class="trip-heart">
+            <h3>Seguro Viagem</h3>
+          </div>
+
+          <img
+            src="img/seguro.png" alt="Seguro" class="trip-img"/>
+
+          <h3 class="trip-title">Viaje seguro sem se preocupar com os imprevistos</h3>
+
+          <div class="trip-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(290+)</span>
+          </div>
+
+          <div class="trip-price">
+            <h4>A partir de R$60,00</h4>
+            <p><a href="/ecommerce/html/servicos/form.html" target="_blank">Faça cotação de seguro</a></p>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+             
     </main>
    
     <footer>
