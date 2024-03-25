@@ -1,5 +1,5 @@
 #chamada {
-    margin: 10px;
+    margin: 30px;
     text-align: center;
     animation: blink 1s steps(1, end) infinite;
   }

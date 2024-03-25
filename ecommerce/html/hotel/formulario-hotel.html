@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/ecommerce/estilo/formulario_hoteis.css">
+  <script src="./script.js" defer></script>
+  <title>Validação de formulário</title>
+</head>
+<body>
+  <form action="">
+    <h2>Formulário </h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name">
+    <p id="name-helper" class="helper-text">Nome deve conter pelo menos 3 caracteres</p>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <p id="email-helper" class="helper-text">Email deve conter @ e .com</p>
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone">
+    <p id="telefone-helper" class="helper-text">Deve conter 11 dígitos 51999999999</p>
+
+    <button onclick="self.close()" data-dismiss="modal">Enviar</button>
+  </form>
+</body>
+</html>
