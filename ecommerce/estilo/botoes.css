@@ -6,15 +6,17 @@
 .nacional-internacional {
     text-decoration: none;
     overflow: hidden;
+    cursor: pointer;
     width: 10%;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 0 90px 0 -50px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 0.9rem;
     border-radius: 17px;
     color:  #fafafa ;
     background:linear-gradient( #C5DBE9, #4D3766);
     border: solid #7b7b7b 1px;
-    cursor: pointer;
+    transition: all 0.2s
   }
   
   .nacional-internacional:hover {

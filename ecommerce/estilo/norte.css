@@ -1,3 +1,14 @@
+.btn-norte{
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    border-style: none;
+}
+
 #norte {
     width: 100%;
     padding: 30px;

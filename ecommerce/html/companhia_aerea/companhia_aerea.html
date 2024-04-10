@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Companhia Aerea</title>
-    <link rel="shortcut icon" href="/ecommerce/html/img/companhia_aerea/logo-icone.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/html/img/companhia_aerea/logo-icone.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/ecommerce/html/companhia_aerea/scroll.js" defer></script>
+    <script src="/ecommerce/html/companhia_aerea/script.js" defer></script>
     <link rel="stylesheet" href="/ecommerce/estilo/header.css" />
     <link rel="stylesheet" href="/ecommerce/estilo/formulario.css" />
     <link rel="stylesheet" href="/ecommerce/estilo/body.css" />
@@ -35,11 +38,10 @@
       <img class="logo" src="/ecommerce/html/img/companhia_aerea/logo-100.png" alt="Logo Grupo 3" />
       <nav class="nav-menu">
         <ul>
-          <li><a href="/ecommerce/html/pagina_principal/index.html">HOME</a></li>
-          <li><a href="/ecommerce/html/aluguel_veiculo/aluguel_veiculo.html">ALUGUEL DE VEÍCULOS</a></li>
-          <li><a href="/ecommerce/html/hotel/hotel.html">HOTÉIS</a></li>
-          <li><a href="/ecommerce/html/companhia_aerea/companhia_aerea.html" style="color: #860f91;">VOOS</a></li>
-          <li><a href="/ecommerce/html/servicos/servicos.html">SERVIÇOS</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ALUGUEL DE VEICULOS</a></li>
+          <li><a href="companhia_aerea.html">VOOS</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
         </ul>
       </nav>
     </header>
@@ -275,10 +277,16 @@
           </div>
         </div>
       </div>
+      <div>
+        <button class="btn-norte" onclick="esconde('teste')" ><i class="fa-solid fa-arrow-up"></i></button>
+        <button class="btn-norte" onclick="mostrar('teste')"><i class="fa-solid fa-arrow-down"></i></button>
+      </div>
     </section>
                               <!--TERMINO NACIONAL-->
                                   <!--Norte-->
+    <section id="teste">
     <section id="norte">
+
       <div id="trips-norte">
         <div class="trip">
           <div class="trip-heart-norte">
@@ -825,6 +833,7 @@
         </div>
       </div>
     </section>
+    </section>
                               <!--INICIO INTERNACIONAL-->
     <section id="internacional">
      <div class="carousel-banner">
@@ -934,8 +943,13 @@
           </div>
         </div>
       </div>
+      <div>
+        <button class="btn-norte" onclick="esconde('teste2')" ><i class="fa-solid fa-arrow-up"></i></button>
+        <button class="btn-norte" onclick="mostrar('teste2')"><i class="fa-solid fa-arrow-down"></i></button>
+      </div>
     </section>
                               <!--América do Sul-->
+    <section id="teste2">
     <section id="AmericaDoSul">
       <div id="trips-AmericaDoSul">
         <div class="trip">
@@ -1601,6 +1615,8 @@
         </div>
       </div>
     </section>
+    </section>
+
                              <!--INICIO CARD DE VIAGENS-->
 
     <section class="carousel">
@@ -1739,11 +1755,11 @@
 
         <div class="row">
           <ul>
-            <li><a href="/ecommerce/html/pagina_principal/index.html">HOME</a></li>
-            <li><a href="/ecommerce/html/aluguel_veiculo/aluguel_veiculo.html">ALUGUEL DE VEÍCULOS</a></li>
-            <li><a href="/ecommerce/html/hotel/hotel.html">HOTÉIS</a></li>
-            <li><a href="/ecommerce/html/companhia_aerea/companhia_aerea.html">VOOS</a></li>
-            <li><a href="/ecommerce/html/servicos/servicos.html">SERVIÇOS</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Aluguel de veículos</a></li>
+            <li><a href="companhia_aerea.html">Voos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </div>
 
