@@ -2,7 +2,7 @@
 > Repositório dedicado para o desenvolvimento do projeto final do grupo 3. Os integrantes são: Adriano Souza, André Milanez, Bruno Vieira, Felipe Vaz e Luis Airton.
 
 > A bolsa de estudos voltada para o desenvolvimento Front-end e concedida pela Localiza L&CO em conjunto com a Proz Educação e AWS.
-> O pitch está disponível no <a href="https://prezi.com/view/tEiJC5k4PjfWMAegVskf/" target="_blank">>>Prezi<<</a>
+> O pitch está disponível no <a href="https://prezi.com/view/tEiJC5k4PjfWMAegVskf/" target="_blank">Prezi</a>
 * Para visualizar o website:
     * Faça o clone do repositório para sua máquina local
     * Abra o projeto utilizando sua IDE de preferência, sugerimos o VSCode
